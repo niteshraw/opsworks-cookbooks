@@ -1,5 +1,5 @@
-maintainer        "Opscode, Inc."
-maintainer_email  "cookbooks@opscode.com"
+maintainer        "nitesh"
+maintainer_email  "nitesh.bhavsar@raweng.com"
 license           "Apache 2.0"
 description       "Installs and configures nginx"
 version           "1.2.5"
@@ -11,12 +11,12 @@ end
 attribute "nginx/dir",
   :display_name => "Nginx Directory",
   :description => "Location of nginx configuration files",
-  :default => "/etc/nginx"
+  :default => "/opt/nginx"
 
 attribute "nginx/log_dir",
   :display_name => "Nginx Log Directory",
   :description => "Location for nginx logs",
-  :default => "/var/log/nginx"
+  :default => "/opt/nginx/log"
 
 attribute "nginx/user",
   :display_name => "Nginx User",
@@ -26,7 +26,7 @@ attribute "nginx/user",
 attribute "nginx/binary",
   :display_name => "Nginx Binary",
   :description => "Location of the nginx server binary",
-  :default => "/usr/sbin/nginx"
+  :default => "/opt/nginx/sbin"
 
 attribute "nginx/gzip",
   :display_name => "Nginx Gzip",
